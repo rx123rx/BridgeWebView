@@ -1,54 +1,22 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.2.61'
+    ext.kotlin_version = '1.2.70'
     ext.versions = [
             'compileSdk'            : 28,
             'minSdk'                : 15,
             'targetSdk'             : 28,
-            'supportLibrary'        : '28.0.0-rc01',
+            'supportLibrary'        : '28.0.0-rc02',
             'constraintLayout'      : '1.1.2',
             'versionName'           : '4.1.2',
-            'versionCode'           : 1808251311,
-            'glide'                 : '4.7.1',
-            'multidex'              : '2.0.0',
-            'jodatime'              : '2.10',
-            'smoothProgressbar'     : '1.3.0',
-            'OkHttp'                : '3.11.0',
-            'retrofit'              : '2.4.0',
-            'rxjava'                : '2.2.0',
-            'rxandroid'             : '2.1.0',
-            'rxjavaAdapter'         : '1.0.0',
-            'zxing'                 : '3.3.3',
-            'utilsCode'             : '1.19.0',
-            'fastjson'              : '1.1.70',
-            'bspatch'               : '1.0.6',
-            'materialDialog'        : '0.9.6.0',
-            'amazonaws'             : '2.6.27',
-            'ultraViewPager'        : '1.0.7.7',
-            'rxpermission'          : '0.9.5',
-            'architectureComponents': '1.1.1',
-            'timber'                : '4.7.1',
-            'leakcanary'            : '1.6.1',
-            'jpush'                 : '3.1.5',
-            'jcore'                 : '1.2.3',
-            'umengCommon'           : '1.5.1',
-            'umengDebug'            : '1.0.0',
-            'umengShareCore'        : '6.9.2',
-            'umengShareWechat'      : '6.9.2',
-            'badgeview'             : '1.1.8',
-            'junit'                 : '4.12',
-            'robolectric'           : '3.6.1',
-            'espresso'              : '2.2.2',
-            'numberprogressbar'     :  '1.4'
-
+            'versionCode'           : 1808251311
     ]
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-rc02'
+        classpath 'com.android.tools.build:gradle:3.2.0-rc03'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
 
