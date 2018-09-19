@@ -1,5 +1,5 @@
 (function () {
-    if (window.nativeApp || window.WebViewJavascriptBridge) {
+    if (window.nativeApp) {
         return;
     }
     var messageHandlers = {};
@@ -84,7 +84,7 @@
             callbacks[i](bridge);
         }
     }
-    window.WebViewJavascriptBridge = window.nativeApp = bridge;
+    window.nativeApp = bridge;
     console.log("bridge: WARNING: no handler for message from java", bridge);
 
     window.close=function(){
