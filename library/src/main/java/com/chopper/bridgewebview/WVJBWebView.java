@@ -230,7 +230,7 @@ public class WVJBWebView extends WebView {
 
     private void dispatchMessage(WVJBMessage message) {
         String messageJSON = message2JSONObject(message).toString();
-        evaluateJavascript(String.format("nativeApp._handleMessageFromJava(%s)", messageJSON));
+        evaluateJavascript(String.format("WebViewJavascriptBridge._handleMessageFromJava(%s)", messageJSON));
     }
 
     // handle the onResult message from javascript
