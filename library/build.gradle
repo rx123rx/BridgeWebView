@@ -14,12 +14,7 @@ android {
         versionCode versions.versionCode
         versionName versions.versionName
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        sourceSets {
-            main {
-                jniLibs.srcDirs = ['libs']
-            }
-        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -33,6 +28,6 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:appcompat-v7:${versions.supportLibrary}"
-    implementation files('src/main/libs/tbs_sdk.jar')
+    implementation fileTree(include: ['*.jar'], dir: 'src/main/libs')
+    implementation "androidx.appcompat:appcompat:${versions.supportLibrary}"
 }

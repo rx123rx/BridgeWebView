@@ -6,8 +6,8 @@ buildscript {
             'compileSdk'            : 28,
             'minSdk'                : 15,
             'targetSdk'             : 28,
-            'supportLibrary'        : '28.0.0-rc02',
-            'constraintLayout'      : '1.1.2',
+            'supportLibrary'        : '1.0.0',
+            'constraintLayout'      : '1.1.3',
             'versionName'           : '4.1.2',
             'versionCode'           : 1808251311
     ]
@@ -18,7 +18,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.0-alpha11'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
